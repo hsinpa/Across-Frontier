@@ -22,10 +22,6 @@ public class RoomGenerationManager : MonoBehaviour {
 		roomNum = maxRoomNum;
 		roomsPrefab = Resources.LoadAll<Room>("Prefab/Room").ToList();
 		mRoomsList.Clear();
-		if (transform.FindChild("RoomHolder") != null)	Object.DestroyImmediate(transform.FindChild("RoomHolder").gameObject);
-		mRoomHolder = new GameObject();
-		mRoomHolder.name = "RoomHolder";
-		mRoomHolder.transform.SetParent(transform);
 
 		List<Room> openRoom = new List<Room>();
 

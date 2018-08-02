@@ -67,7 +67,7 @@ namespace Utility {
 		/// </summary>
 		/// <returns>The dice.</returns>
 		public static int RollDice() {
-			return Mathf.RoundToInt(Random.Range(0,1));
+			return Random.Range(0,2);
 		}
 		
 		/// <summary>
